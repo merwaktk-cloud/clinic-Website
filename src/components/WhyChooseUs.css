@@ -1,0 +1,126 @@
+.why-choose-us {
+  padding-block: var(--section-space);
+  background-color: var(--color-nude-light);
+}
+
+.why-choose-us__header {
+  max-width: 42rem;
+  margin: 0 auto var(--space-12);
+  text-align: center;
+}
+
+.why-choose-us__eyebrow {
+  margin-bottom: var(--space-3);
+  color: var(--color-olive-dark);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.why-choose-us__header h2 {
+  margin-bottom: var(--space-4);
+}
+
+.why-choose-us__introduction {
+  max-width: 34rem;
+  margin: 0 auto;
+  font-size: var(--font-size-lg);
+}
+
+.why-choose-us__grid {
+  display: grid;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  list-style: none;
+}
+
+.why-highlight {
+  position: relative;
+  min-height: 15rem;
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background-color: rgb(255 255 255 / 72%);
+}
+
+.why-highlight__number {
+  position: absolute;
+  top: var(--space-5);
+  right: var(--space-5);
+  color: var(--color-nude-dark);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.08em;
+}
+
+.why-highlight__icon {
+  display: grid;
+  width: 3.25rem;
+  height: 3.25rem;
+  margin-bottom: var(--space-6);
+  place-items: center;
+  border-radius: 50%;
+  background-color: var(--color-nude);
+  color: var(--color-maroon);
+}
+
+.why-highlight__icon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.6;
+}
+
+.why-highlight h3 {
+  margin-bottom: var(--space-3);
+  color: var(--color-maroon-dark);
+  font-size: var(--font-size-lg);
+}
+
+.why-highlight p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+}
+
+.why-choose-us__disclaimer {
+  max-width: 46rem;
+  margin: var(--space-6) auto 0;
+  font-size: var(--font-size-xs);
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .why-choose-us__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .why-choose-us__header {
+    margin-bottom: var(--space-8);
+    text-align: left;
+  }
+
+  .why-choose-us__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .why-highlight {
+    min-height: 0;
+    padding: var(--space-5);
+  }
+
+  .why-highlight__icon {
+    margin-bottom: var(--space-4);
+  }
+
+  .why-choose-us__disclaimer {
+    text-align: left;
+  }
+}
